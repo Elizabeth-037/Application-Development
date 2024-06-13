@@ -1,0 +1,126 @@
+.blur{
+    filter: blur(2px);
+    transition-duration: 0.5s;
+}
+.changeB{
+    background-color: rgb(252, 226, 226);
+    transition-duration: 0.5s;
+}
+
+
+
+#divB{
+    margin: 0 auto;
+
+    background-color: rgb(255, 242, 242);
+
+}
+
+.search-form {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+#searchBar{
+    width: 70%;
+    margin:30px auto;
+    padding: 10px;
+}
+#searchBar>*{
+    display: inline-block;
+}
+
+#intro{
+    position: absolute;
+    left: 11%;
+    text-align: center;
+}
+
+#submitButton,#refreshButtom{
+    width: 110px;
+    height: 50px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255,174,182);
+    border-color: rgb(255,174,182);
+}
+table{
+    position: absolute;
+    left: 90%;
+    transform: translateX(-100%);
+}
+#searchInput{
+    font-size: 20px;
+    font-family: Helvetica;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#searchInput::placeholder{
+    transform-origin: top left;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+#searchInput:focus::placeholder{
+    transform: scale(0.7);
+}
+
+
+.search-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bike-item {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 400px;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:  rgb(255,174,182);
+}
+.bike-item:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+.bike-item a{
+    text-decoration: none;
+    color: white;
+    font-family:Helvetica;
+    font-weight: bold;
+}
+.bike-item img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 4/3;
+}
+.bike-item h2 {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .bike-item {
+        width: 100%; 
+    }
+}
+
+#intro{
+    font-family: Helvetica;
+    font-size: 20px;
+}

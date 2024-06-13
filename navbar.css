@@ -1,0 +1,60 @@
+.navbar {
+    width: 80%;
+    margin: 0 auto; /* 居中显示导航栏 */
+}
+
+.navbar a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif; /* 增加备选字体 */
+    font-size: 16px;
+    margin: 20px;
+}
+
+#HP:hover, #MP:hover, #RP:hover, #CP:hover {
+    transform: scale(1.5);
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+.icon {
+    background-image: url('my_profile.jpeg'); 
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10%; /* 调整为相对于右边的百分比位置 */
+}
+
+.search {
+    background-image: url('search.png'); 
+    background-size: cover;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 12%; /* 调整为相对于右边的百分比位置 */
+    margin-top: 2px;
+}
+/* 媒体查询，对不同屏幕宽度进行样式调整 */
+@media (max-width: 800px) {
+    .navbar {
+        width: 100%; /* 小屏幕上宽度为100% */
+    }
+    .navbar a {
+        margin: 10px; /* 减小边距 */
+        font-size: 14px; /* 减小字号 */
+    }
+    .icon, .search {
+        width: 15px; /* 调整图标大小 */
+        height: 15px;
+    }
+    .icon {
+        right: 5%;
+    }
+    .search {
+        right: 8%;
+    }
+}

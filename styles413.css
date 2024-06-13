@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+
+
+.menu-category .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  /* other styling */
+}
+
+.menu-category:hover .dropdown-menu {
+  display: block;
+  /* other styling */
+}
+
+/* Additional styles for thumbnails and links */
+.submenu-thumbnail img {
+  width: 100px; /* example size */
+  height: auto;
+  /* other styling */
+}
+
+
+
+
+
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* 给容器添加轻微的阴影 */
+}
+
+
+.breadcrumb {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.title {
+    font-family: 'Montserrat', sans-serif; /* 使用Montserrat字体，加粗样式 */
+    text-transform: uppercase; /* 设置文本转换为大写 */
+    font-size: 88px; /* 设置字体大小 */
+    color: #333; /* 设置字体颜色 */
+    text-align: center; /* 标题居中显示 */
+    margin: 20px 20px; /* 添加上下边距 */
+}
+
+
+.details {
+    display: flex;
+    align-items: center; /* 确保图片和信息垂直居中对齐 */
+}
+
+.image-container {
+    width: 70%; /* 设置图片容器的宽度 */
+    padding: 20px;
+
+
+    position: relative;
+    cursor: crosshair; /* 或使用zoom-in来提示可以放大 */
+
+
+
+
+
+}
+
+
+
+.image-container img {
+    width: 100%;
+    max-height: 400px; /* 根据需要调整 */
+    object-fit: contain;
+    background: #fff; /* 确保背景是白色 */
+    border: 1px solid #ddd; /* 添加细边框 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加轻微的阴影 */
+    padding: 10px; /* 添加一些内边距 */
+
+    transition: transform 0.3s ease; /* 平滑变换效果 */
+    width: 100%; /* 响应式图片宽度 */
+    height: auto; /* 保持图片比例 */
+    display: block; /* 防止底部出现空隙 */
+}
+
+
+.image-container:hover img {
+    transform: scale(1.01); /* 放大图像 */
+}
+
+.magnifier-lens {
+    position: absolute;
+    border: 0px solid #000;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%; /* 圆形镜头 */
+    cursor: none;
+    /* 镜头内部不显示任何内容 */
+    background: none;
+    pointer-events: none; /* 防止镜头干扰鼠标事件 */
+}
+
+
+
+
+.info {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* 使得标签和价格垂直堆叠 */
+    justify-content: center; /* 垂直居中 */
+}
+
+.info .tag {
+    display: inline-block;
+    background: #ddd;
+    padding: 5px 10px;
+    margin-bottom: 10px; /* 添加间隔 */
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.info h2 {
+    margin-top: 0;
+    margin-bottom: 10px; /* 添加间隔 */
+}
+
+.price {
+    color: red;
+    font-size: 2.5rem;
+    margin-bottom: 10px; /* 添加间隔 */
+}
